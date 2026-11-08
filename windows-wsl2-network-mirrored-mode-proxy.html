@@ -226,7 +226,7 @@ a:hover { color: var(--tangerine); }
 <h2>3. Windows 11 23H2+镜像网络模式（Mirrored Mode）的革命</h2>
 <p>为了终结NAT虚拟网桥带来的割裂感，微软在现代Windows 11版本中正式引入了革命性的镜像网络模式（networkingMode=mirrored）。开发者只需在用户主目录的.wslconfig配置文件中开启mirrored模式以及autoProxy自动代理同步属性，WSL2子系统就会直接与Windows宿主机共享完全相同的网络接口与localhost回环地址，宿主机监听在127.0.0.1上的加速端口在Linux子系统内可直接零配置连通。</p>
 <h2>4. 结合TUN虚拟网卡模式实现全协议透明加速</h2>
-<p>如果想连环境变量都无需关心，最彻底的方案是在开启WSL2镜像模式的同时，在Windows加速客户端中启用基于Wintun或Sing-box内核的TUN虚拟网卡（增强/规则模式）。根据<a href="https://tizilab.net/" target="_blank">Windows与Linux开发环境加速库</a>提供的实测配置指南，TUN网卡会在操作系统路由表层直接接管来自WSL2进程的TCP、UDP及ICMP流量，无论是拉取海外Git子模块还是运行跨国容器集群都如丝般顺滑。</p>
+<p>如果想连环境变量都无需关心，最彻底的方案是在开启WSL2镜像模式的同时，在Windows加速客户端中启用基于Wintun或Sing-box内核的TUN虚拟网卡（增强/规则模式）。根据Windows与Linux开发环境加速库提供的实测配置指南，TUN网卡会在操作系统路由表层直接接管来自WSL2进程的TCP、UDP及ICMP流量，无论是拉取海外Git子模块还是运行跨国容器集群都如丝般顺滑。</p>
 <h3>全平台客户端配置与最佳实践</h3>
 <p>建议用户在日常使用中充分利用客户端的策略组自动测速与规则集增量更新能力，将关键业务域名精准指向最优专线节点，实现安全与速度的双重跃升。</p>
 <h2>5. 解决WSL2内部DNS解析超时与域名污染</h2>
@@ -243,7 +243,7 @@ a:hover { color: var(--tangerine); }
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank" class="btn-primary">立即免费试用 <svg class="ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></a>
-          <a href="https://tizilab.net/paihang/" target="_blank" class="btn-secondary">2026最新梯子推荐</a>
+          
         </div>
       </div>
     </div>

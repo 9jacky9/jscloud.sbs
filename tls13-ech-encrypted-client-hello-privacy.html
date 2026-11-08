@@ -226,7 +226,7 @@ a:hover { color: var(--tangerine); }
 <h2>3. ECH是如何依托加密DNS（DoH/DoT）协同工作的</h2>
 <p>ECH之所以能够实现在未建立连接前就完成公钥加密，离不开现代HTTPS DNS记录（SVCB/HTTPS RR，Type 65）与加密DNS的紧密配合。当浏览器准备访问目标网站时，首先会通过加密的DoH（DNS over HTTPS）通道查询该域名的Type 65记录，从中获取由目标CDN网关发布的ECH公钥参数；随后浏览器利用该公钥将真实的Client Hello完整加密后发出。如果缺少纯净且支持HTTPS记录的DoH通道，ECH机制便无法被正常激活。</p>
 <h2>4. 现代AEAD加密专线与ECH的双重隐私纵深防御</h2>
-<p>虽然ECH在浏览器与支持该特性的CDN站点之间筑起了一道防窥墙，但传输层的源目的IP地址、流量包长特征与非ECH站点依然需要更底层的保护。在<a href="https://tizilab.net/" target="_blank">前沿加密协议与隐私保护评测站</a>的安全架构评估中，将支持遠端加密DoH解析的高性能AEAD专线隧道与现代浏览器ECH特性相结合，被公认为当前个人对抗公共网络嗅探、ISP元数据收集与流量分析的黄金标准。</p>
+<p>虽然ECH在浏览器与支持该特性的CDN站点之间筑起了一道防窥墙，但传输层的源目的IP地址、流量包长特征与非ECH站点依然需要更底层的保护。在前沿加密协议与隐私保护评测站的安全架构评估中，将支持遠端加密DoH解析的高性能AEAD专线隧道与现代浏览器ECH特性相结合，被公认为当前个人对抗公共网络嗅探、ISP元数据收集与流量分析的黄金标准。</p>
 <h3>全平台客户端配置与最佳实践</h3>
 <p>建议用户在日常使用中充分利用客户端的策略组自动测速与规则集增量更新能力，将关键业务域名精准指向最优专线节点，实现安全与速度的双重跃升。</p>
 <h2>5. 如何在主流桌面与移动浏览器中检验ECH状态</h2>
@@ -243,7 +243,7 @@ a:hover { color: var(--tangerine); }
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank" class="btn-primary">立即免费试用 <svg class="ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></a>
-          <a href="https://tizilab.net/paihang/" target="_blank" class="btn-secondary">2026最新梯子推荐</a>
+          
         </div>
       </div>
     </div>
